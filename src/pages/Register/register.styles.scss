@@ -1,0 +1,161 @@
+/* Estilos para dispositivos desktop
+
+*/
+.event-form--wrapper-top-box {
+  background-color: #121214;
+  padding-top: 80px;
+  padding-bottom: 128px;
+}
+
+.event-form--box-title-text {
+  max-width: 736px;
+  width: 50%;
+  margin: 0 auto;
+}
+.event-form--input {
+  height: 56px;
+  outline: 0;
+  padding-left: 30px;
+  border-radius: 8px;
+  border: 1px solid #e6e6f0;
+}
+.event-form--box-input-label {
+  display: flex;
+  flex-direction: column;
+}
+.event-form--title {
+  color: #fff;
+  width: 344px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 24px;
+}
+
+.event-form--text {
+  color: #42d3ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  width: 283px;
+}
+
+.event-form--container {
+  background: #d9d9d9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.event-form--form-box {
+  width: 736px;
+  margin: 0 auto;
+  background: #fafafc;
+  border-radius: 8px;
+  position: absolute;
+  margin-top: -86px;
+}
+
+.event-form--button {
+  width: 100%;
+  border-radius: 8px;
+  background: #04d361;
+  height: 56px;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.event-form--button:hover {
+  background: #3fd87c;
+}
+
+.event-form--form-title {
+  color: #32264d;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
+}
+
+.event-form--group-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.event-form--label {
+  color: #4e4958;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.event-form--small-spans {
+  color: #c1bccc;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.event-form--form {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.event-form--all-group-section {
+  padding: 64px 64px 0 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.event-form--box-button {
+  padding: 40px 64px;
+  border-radius: 0px 0px 8px 8px;
+  background: #f0f0f4;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  .event-form--wrapper-top-box {
+    padding-top: 60px; /* Reduza o padding para telas menores */
+    padding-bottom: 80px; /* Reduza o padding para telas menores */
+  }
+
+  .event-form--box-title-text {
+    width: 90%; /* Ajuste a largura do texto para ocupar mais espaço na tela */
+  }
+
+  .event-form--title {
+    font-size: 24px; /* Reduza o tamanho da fonte do título para telas menores */
+    width: 100%; /* Ajuste a largura do título para ocupar mais espaço na tela */
+  }
+
+  .event-form--text {
+    width: 90%; /* Ajuste a largura do texto para ocupar mais espaço na tela */
+  }
+
+  .event-form--form-box {
+    width: 90%; /* Ajuste a largura do formulário para ocupar mais espaço na tela */
+    margin-top: -46px; /* Ajuste o margin-top para corrigir a posição do formulário */
+  }
+
+  .event-form--box-button {
+    padding: 20px 32px; /* Reduza o padding do botão para telas menores */
+  }
+}

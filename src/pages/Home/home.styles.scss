@@ -1,0 +1,16 @@
+.home-page--movie-image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+}
+.home-page--movie-wrapper {
+  height: auto;
+  width: 266px;
+  height: 150px;
+}
+.home-page--movie-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}

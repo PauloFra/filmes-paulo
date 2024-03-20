@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "BeaufortforLOL";
+  src: url("../fonts/beaufort-for-lol/BeaufortforLOL-Regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "iphone";
+  src: url("../fonts/iPhone/MYRIADPRO-REGULAR.OTF") format("truetype");
+}
+
+* {
+  src: url("../fonts/iPhone/MYRIADPRO-REGULAR.OTF") format("truetype");
+  font-family: "iphone";
+  padding: 0;
+  margin: 0;
+}
