@@ -1,20 +1,12 @@
 {
   "dados": [
     {
-      "movieTitle": "Magnatas do Crime",
+      "movieTitle": "Magnatas do Crime 444",
       "movieDirection": "Guy Ritchie",
       "movieBannerLink": "https://blogs.uai.com.br/opipoqueiro/wp-content/uploads/sites/54/2020/10/Magnatas-do-Crime-01.jpg",
       "movieDescription": "Um talentoso graduado estadunidense em Oxford, usando suas habilidades únicas, audácia e propensão à violência, cria um império da maconha usando as propriedades dos aristocratas ingleses empobrecidos. No entanto, quando ele tenta vender seu negócio a um colega bilionário. Daí, uma cadeia de eventos se desenrola, envolvendo chantagem, decepção, caos e assassinato entre bandidos de rua, oligarcas russos, gângsteres e jornalistas.",
       "movieRate": "8",
       "id": 2
-    },
-    {
-      "movieTitle": "O Lobo de Wall Street",
-      "movieDirection": "Martin Scorsese",
-      "movieBannerLink": "https://miro.medium.com/v2/resize:fit:2560/1*CE3Gm8ZJGl4t_Ud3zUFkCQ.jpeg",
-      "movieDescription": "Jordan Belfort é um ambicioso corretor da bolsa de valores que cria um verdadeiro império, enriquecendo de forma rápida, porém ilegal. Ele e seus amigos mergulham em um mundo de excessos, mas seus métodos ilícitos despertam a atenção da polícia.",
-      "movieRate": "10",
-      "id": 3
     },
     {
       "movieTitle": "Parasita",

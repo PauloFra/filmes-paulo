@@ -27,7 +27,7 @@ function MovieCard({ item, handleDelete }) {
             <p>Diretor do Filme:{item.movieDirection}</p>
             <p>Descrição{item.movieDescription}</p>
             <p>Nota{item.movieRate}</p>
-            <Link to={`/editar-filme/${item.id}`}>
+            <Link to={`/register/${item.id}`}>
               <button>Editar Filme</button>
             </Link>
             <button

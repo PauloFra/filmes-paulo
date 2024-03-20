@@ -11,8 +11,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/register/:id" element={<Register />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/editar-filme/:id" element={<Register />} />
       </Routes>
     </Router>
   );

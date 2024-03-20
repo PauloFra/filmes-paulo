@@ -5,6 +5,7 @@ const useApi = () => {
   const [error, setError] = useState(null);
   const [dados, setDados] = useState([]);
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     const getDados = async () => {
       try {
@@ -31,6 +32,19 @@ const useApi = () => {
     }
   };
 
+  const putDados = async (id, updatedData) => {
+    try {
+      setLoading(true);
+      const response = await api.put(`/dados/${id}`, updatedData);
+      setLoading(false);
+      return response.data;
+    } catch (error) {
+      setLoading(false);
+      setError(error);
+      throw error;
+    }
+  };
+
   const deleteDados = async (id) => {
     try {
       setLoading(true);
@@ -44,10 +58,25 @@ const useApi = () => {
     }
   };
 
+  const getDadosById = async (id) => {
+    try {
+      setLoading(true);
+      const response = await api.get(`/dados/${id}`);
+      setLoading(false);
+      return response.data;
+    } catch (error) {
+      setLoading(false);
+      setError(error);
+      throw error;
+    }
+  };
+
   return {
     dados,
     postDados,
+    putDados,
     deleteDados,
+    getDadosById,
     loading,
     error,
   };
