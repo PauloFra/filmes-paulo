@@ -1,32 +1,38 @@
 import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
+import "./movieCard.styles.scss";
 function MovieCard({ item, handleDelete }) {
   const [isHide, setIsHide] = useState(false);
   return (
-    <div
+    <button
       onMouseEnter={() => {
         setIsHide(true);
       }}
       onMouseLeave={() => {
         setIsHide(false);
       }}
-      className="home-page--movie-wrapper"
+      className={`movie-card--movie-wrapper ${isHide ? 'movie-card--seeing-movie-wrapper' : ''}`}
     >
-      <div className="home-page--movie-wrapper-initial">
-        <img
-          src={item.movieBannerLink}
-          className="home-page--movie-image"
-          alt=""
-        />
-      </div>
-      <div className="home-page--movie-wrapper-hidden">
-        {isHide && (
-          <>
-            <p>Titulo do Filme: {item.movieTitle}</p>
-            <p>Diretor do Filme:{item.movieDirection}</p>
-            <p>Descrição{item.movieDescription}</p>
-            <p>Nota{item.movieRate}</p>
+      <img
+        src={item.movieBannerLink}
+        className="movie-card--movie-image"
+        alt=""
+      />
+
+      {
+        isHide && (
+          <div className="movie-card--movie-wrapper-hidden">
+            <p className="movie-card--paragraph">
+              Titulo do Filme: {item.movieTitle}
+            </p>
+            <p className="movie-card--paragraph">
+              Diretor do Filme:{item.movieDirection}
+            </p>
+            <p className="movie-card--paragraph">
+              Descrição{item.movieDescription}
+            </p>
+            <p className="movie-card--paragraph">Nota{item.movieRate}</p>
             <Link to={`/register/${item.id}`}>
               <button>Editar Filme</button>
             </Link>
@@ -37,10 +43,10 @@ function MovieCard({ item, handleDelete }) {
             >
               Deletar Filme
             </button>
-          </>
-        )}
-      </div>
-    </div>
+          </div>
+        )
+      }
+    </button >
   );
 }
 

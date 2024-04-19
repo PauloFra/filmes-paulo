@@ -15,31 +15,35 @@ function Home() {
   };
 
   useEffect(() => {
-    setList(dados);
-  }, [dados]);
+    if (dados) {
+      setList(dados);
+    }
+  }, [dados, deleteDados]);
 
   const filteredList = list.filter((item) =>
     item.movieTitle.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
-    <div>
-      <h1>Lista de usuarios</h1>
-      <label htmlFor="searchInput">Pesquisar:</label>
-      <input
-        id="searchInput"
-        name="searchInput"
-        type="text"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-      <div className="home-page--movie-list">
-        {filteredList &&
-          filteredList.map((item) => (
-            <MovieCard key={item.id} item={item} handleDelete={handleDelete} />
+    <main className="home-page--body-section">
+      <section className="home-page--main-section">
+        <h1>Lista de usuarios</h1>
+        <label htmlFor="searchInput">Pesquisar:</label>
+        <input
+          id="searchInput"
+          name="searchInput"
+          type="text"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />{" "}
+        <h2>Best Movies</h2>
+        <div className="home-page--movie-list">
+          {filteredList.map((item) => (
+            <MovieCard item={item} handleDelete={handleDelete} />
           ))}
-      </div>
-    </div>
+        </div>
+      </section>
+    </main>
   );
 }
 

@@ -1,0 +1,35 @@
+.movie-card--movie-wrapper-hidden {
+  color: white;
+  position: absolute;
+  left: 0;
+  background-color: black;
+
+  padding: 10px;
+}
+.movie-card--movie-image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+}
+.movie-card--movie-wrapper {
+  width: 266px;
+  position: relative;
+  transition: transform 0.3s ease;
+  border-radius: 30px;
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+.movie-card--movie-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.movie-card--paragraph {
+  color: white !important;
+}
+.movie-card--seeing-movie-wrapper {
+  z-index: 99;
+}

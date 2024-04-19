@@ -1,0 +1,17 @@
+.header--container {
+  background-color: rgb(0, 5, 13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.header--logo-div {
+  h3 {
+    color: white;
+  }
+}
+.header--ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
